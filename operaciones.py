@@ -6,16 +6,17 @@ def pausar():
 def limpiar_pantalla():
     system("cls")
 
-def menu() -> str:
+def menu(valor_1:int, valor_2:int) -> str:
     """_despliega un menu con opciones para interactuar con el usuario
+    se agregan 2 enteros
 
     Returns:
         str: _submenu
     """
     limpiar_pantalla()
     print("      menu de opciones")
-    print("A- ingrese su primer operando ")
-    print("B- ingrese su segundo operando ")
+    print(f"{"A- ingrese por favor su primer operando"if valor_1 == 0 else f"su primer operando es: {valor_1} "} ")
+    print(f"{"B- ingrese por favor su segundo operando"if valor_2 == 0 else f"su segundo operando es: {valor_2} "} ")
     print("C- elegir operacion aritmetica ")
     print("D- mostrar mi resultados")
     print("E- salir")

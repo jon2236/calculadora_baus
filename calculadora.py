@@ -1,4 +1,4 @@
-from calculadora_baus.operaciones import *
+from operaciones import *
 
 
 flag_num1 = False
@@ -9,7 +9,12 @@ resultado = 0
 
 while True:
 
-    match menu():
+
+
+
+
+
+    match menu(valor_1, valor_2):
         case "a":
             valor_1 = ingrese_operando("ingrese por favor su primer operando ")
             flag_num1 = True
